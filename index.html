@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gangnam HTML5 Style</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/2.3.0/cyborg/bootstrap.min.css">
+        <link rel="stylesheet" href="//vjs.zencdn.net/c/video-js.css">
+        <style>
+            .vid {
+                width: 640px;
+                margin: 40px auto;
+            }
+
+            .video-js .vjs-text-track {
+                font-size: 1.8em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12 text-center">
+                    <h1>Gangnam HTML5 Style</h1>
+                    <p>The <a href="https://www.youtube.com/watch?v=9bZkp7q19f0">Gangnam Style</a> music video with phonetic subtitles, using <a href="https://en.wikipedia.org/wiki/HTML5_video">HTML5 video</a>, <a href="https://en.wikipedia.org/wiki/Webm">WebM</a>, <a href="https://en.wikipedia.org/wiki/WebVTT">WebVTT</a> and <a href="http://videojs.com">Video.js</a></p>
+                    <div class="vid">
+                        <video id="mv" class="video-js vjs-default-skin" controls width="640" height="360" poster="/img/mv-cover.jpg" preload="auto" data-setup="{}">
+                            <source type="video/webm" src="/video/mv360.webm"/>
+                            <track kind="subtitles" src="/sub/en.vtt" srclang="en" label="English (Phonetic)" default/>
+                            <track kind="subtitles" src="/sub/el.vtt" srclang="el" label="Greek (Phonetic)"/>
+                        </video>
+                    </div>
+                    <p>Phonetic subtitles by <a href="https://github.com/simos/gangnamstyle">simos</a></p>
+                    <p>Video copyright: YG Entertainment Inc.</p>
+                    <footer>
+                        <p>with ♥ by <a href="http://thanoslefteris.com">alefteris</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script src="//vjs.zencdn.net/c/video.js"></script>
+        <script>
+            var _gaq=[['_setAccount','UA-2253353-5'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
